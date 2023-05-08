@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/DesarrolloWeb/static/css/main.0cc6384a.css",
+    "main.js": "/DesarrolloWeb/static/js/main.4117f35a.js",
+    "index.html": "/DesarrolloWeb/index.html",
+    "main.0cc6384a.css.map": "/DesarrolloWeb/static/css/main.0cc6384a.css.map",
+    "main.4117f35a.js.map": "/DesarrolloWeb/static/js/main.4117f35a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0cc6384a.css",
+    "static/js/main.4117f35a.js"
+  ]
+}
