@@ -1,0 +1,30 @@
+.BlogNav-contenedor{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--colorBlanco);
+    color: var(--colorPrincipal);
+    height: 60px;
+    box-shadow: -5px 0 10px var(--colorSombra);
+    z-index: 10;   
+}
+.BlogNav-contenedor ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+}
+
+.BlogNav-contenedor .BlogNav-contenedor__elemento{  
+    height: 100%;
+    display: flex;
+    align-items:center;
+    padding: 0 15px;
+    font-size: 20px;
+    user-select: none;
+}
+  
+  
+

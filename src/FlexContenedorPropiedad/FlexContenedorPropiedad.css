@@ -1,0 +1,13 @@
+.FlexContenedor_Propiedad{
+    padding: 10px;
+    border-radius: 10px;
+}
+.FlexElemento:nth-child(1){
+    background-color: var(--colorMorado);
+}
+.FlexElemento:nth-child(2){
+    background-color: var(--colorRojo);
+}
+.FlexElemento:nth-child(3){
+    background-color: var(--colorNaranja);
+}

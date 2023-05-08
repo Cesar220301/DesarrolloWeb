@@ -1,0 +1,68 @@
+.FlexEjemplo{
+    display: flex;
+    padding: 5px;
+    border: 1px solid var(--colorSombra);
+    height: 90px;
+    background: var(--colorAzulado);
+}
+
+.Justify-content--flex-start{
+    justify-content: flex-start;
+}
+
+.Justify-content--flex-end{
+    justify-content: flex-end;
+}
+
+.Justify-content--center{
+    justify-content: center;
+}
+.Justify-content--space-between{
+    justify-content: space-between;
+}
+.Justify-content--space-around{
+    justify-content: space-around;
+}
+.Justify-content--space-evenly{
+    justify-content: space-evenly;
+}
+.Flex-direction--row{
+    flex-direction: row;
+}
+.Flex-direction--column{
+    flex-direction: column;
+}
+
+
+.Flex-wrap--wrap,.Flex-wrap--wrap-reverse{
+    height: auto;
+}
+.Flex-wrap--wrap .FlexElemento,.Flex-wrap--wrap-reverse .FlexElemento,.Flex-wrap--nowrap .FlexElemento{
+    width: 450px;
+}
+.Flex-wrap--nowrap{
+    flex-wrap: nowrap;
+}
+.Flex-wrap--wrap{
+    flex-wrap: wrap;
+}
+.Flex-wrap--wrap-reverse{
+    flex-wrap: wrap-reverse;
+}
+
+.Aling-items--flex-start{
+    align-items: flex-start;
+}
+.Aling-items--center{
+    align-items: center;
+}
+.Aling-items--flex-end{
+    align-items: flex-end;
+}
+.Aling-items--stretch > .FlexElemento{
+    height: initial;
+}
+.Aling-items--stretch{
+    align-items: stretch;
+}
+

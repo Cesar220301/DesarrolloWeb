@@ -1,0 +1,24 @@
+.FlexTitulo{
+    color: var(--colorPrincipal);
+    font-size: 3rem;
+    display: flex;
+    margin: 10px 0;
+}
+.FlexTitulo .FlexTitulo__lista{    
+    border: none;
+    background-color: var(--colorSecundarioTransparente);
+    border-radius: 4px;
+    padding: 1px 5px;
+    margin-left: 10px;
+    outline: none;
+    font-size: 1.7rem;
+    box-shadow: none !important;
+}
+.FlexTitulo .FlexTitulo__lista option{
+    background-color: #000;
+    color: #fff;
+}
+
+
+
+

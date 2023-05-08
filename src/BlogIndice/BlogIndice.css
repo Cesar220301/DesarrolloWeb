@@ -1,0 +1,19 @@
+.indice{
+    position: fixed;
+    background-color: var(--colorAzulado);
+    height: calc(100vh - 60px);
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    width: 200px;
+    z-index: 20;
+    box-shadow: 1px 9px 10px var(--colorSombra);
+}
+.indice a{
+    display: block;
+    color: var(--colorNegro);
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 8px 15px;
+    border-radius: 4px;
+    background: var(--colorBlancoTransparente);
+}
