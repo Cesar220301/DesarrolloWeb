@@ -1,13 +1,15 @@
 :root{
-  --colorPrincipal: #00c16c ;
+  /* --colorPrincipal: #00c16c ; */
+  --colorPrincipal: #004 ;
   --colorPrincipalTransparente: #00c16c44 ;
   --colorSecundario: #a7cc15 ;
-  --colorSecundarioTransparente: #a7cc1555 ;
+  /* --colorSecundarioTransparente: #a7cc1555 ; */
+  --colorSecundarioTransparente: #0041 ;
   --colorTercero: #f56217 ;
   --colorTerceroTransparente: #f5621744;
   --colorAzulTransparente: #0042;
   --colorBlanco: #fff ;
-  --colorBlancoTransparente: #fffd ;
+  --colorBlancoTransparente: #fff7 ;
   --colorNegro: #000 ;
   --colorSombra: #d3d2e1;
   --colorAzulado: #f7f7fd;
@@ -23,6 +25,7 @@
   box-sizing: border-box;
   font-family: 'Helvetica Neue', sans-serif;
 }
+
 html{
   font-size: 62.5%;
 }
