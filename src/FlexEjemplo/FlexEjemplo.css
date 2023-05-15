@@ -2,10 +2,37 @@
     display: flex;
     padding: 5px;
     border: 1px solid var(--colorSombra);
-    height: 90px;
+    height: 150px;
     background: var(--colorAzulado);
+    align-self: end;
 }
 
+/* INICIO DISPLAY */
+.Display--flex .FlexElemento{
+    display: flex;
+}
+.Display--inline{
+    display: block;
+}
+.Display--inline .FlexElemento{
+    display: inline;
+}
+.Display--inline .FlexElemento::after{
+    content: "contenido";
+    font-size: 1.2rem;
+    color: var(--colorBlanco);
+}
+.Display--block{
+    display: block;
+}
+.Display--block .FlexElemento{
+    display: block;
+    width: 100%;
+}
+/* FIN DISPLAY */
+
+
+/* INIDIOC JUSTIFY CONTENT */
 .Justify-content--flex-start{
     justify-content: flex-start;
 }
@@ -26,19 +53,31 @@
 .Justify-content--space-evenly{
     justify-content: space-evenly;
 }
+/* FIN JUSTIFY CONTENT */
+
+
+/* INICIO FLEX DIRECTION */
 .Flex-direction--row{
     flex-direction: row;
 }
 .Flex-direction--column{
     flex-direction: column;
 }
+.Flex-direction--row-reverse{
+    flex-direction: row-reverse;
+}
+.Flex-direction--column-reverse{
+    flex-direction: column-reverse;
+}
+/* FIN FLEX DIRECTION */
 
 
+/* INICIO FLEX WRAP */
 .Flex-wrap--wrap,.Flex-wrap--wrap-reverse{
     height: auto;
 }
 .Flex-wrap--wrap .FlexElemento,.Flex-wrap--wrap-reverse .FlexElemento,.Flex-wrap--nowrap .FlexElemento{
-    width: 450px;
+    width: 40%;
 }
 .Flex-wrap--nowrap{
     flex-wrap: nowrap;
@@ -49,7 +88,19 @@
 .Flex-wrap--wrap-reverse{
     flex-wrap: wrap-reverse;
 }
+/* FIN FLEX WRAP */
 
+
+/* INICIO ALIGN ITEMS */
+.Aling-items--flex-start .FlexElemento,
+.Aling-items--flex-end .FlexElemento,
+.Aling-items--center .FlexElemento,
+.Aling-items--stretch .FlexElemento{
+    width: 40%;
+}
+.Aling-items--flex-start,.Aling-items--flex-end,.Aling-items--center,.Aling-items--stretch{
+    flex-wrap: wrap;
+}
 .Aling-items--flex-start{
     align-items: flex-start;
 }
@@ -65,4 +116,220 @@
 .Aling-items--stretch{
     align-items: stretch;
 }
+/* FIN ALIGN ITEMS */
 
+
+/* INICIO ALIGN CONTENT */
+.Aling-content--flex-start .FlexElemento,
+.Aling-content--flex-end .FlexElemento,
+.Aling-content--center .FlexElemento,
+.Aling-content--stretch .FlexElemento,
+.Aling-content--space-between .FlexElemento,
+.Aling-content--space-around .FlexElemento{
+    width: 40%;
+}
+.Aling-content--flex-start,
+.Aling-content--flex-end,
+.Aling-content--center,
+.Aling-content--stretch,
+.Aling-content--space-between,
+.Aling-content--space-around{
+    flex-wrap: wrap;
+}
+.Aling-content--flex-start{
+    align-content: flex-start;
+}
+.Aling-content--center{
+    align-content: center;
+}
+.Aling-content--flex-end{
+    align-content: flex-end;
+}
+.Aling-content--stretch > .FlexElemento{
+    height: initial;    
+}
+.Aling-content--stretch{
+    align-content: stretch;
+}
+.Aling-content--space-around{
+    align-content: space-around;
+}
+.Aling-content--space-between{
+    align-content: space-between;
+}
+/* FIN ALIGN CONTENT */
+
+
+/* INICIO ALIGN SELF */
+.Align-self--flex-end div,
+.Align-self--flex-start div,
+.Align-self--center div{
+    flex-basis: 100%;
+}
+
+.Align-self--flex-start div:first-child{
+    align-self: flex-start;
+}
+.Align-self--flex-start div:first-child::after{
+    content: "flex-start";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+.Align-self--flex-end div:first-child{
+    align-self: flex-end;
+}
+.Align-self--flex-end div:first-child::after{
+    content: "flex-end";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+.Align-self--center div:first-child::after{
+    content: "center";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+.Align-self--center div:first-child{
+    align-self: center;
+}
+/* FIN ALIGN SELF */
+
+
+/* INICIO FLEX GROW */
+.Flex-grow--0 div,
+.Flex-grow--1 div{
+    flex-basis: 50px;
+}
+.Flex-grow--ejemplo div{
+    flex-grow: 1;
+}
+.Flex-grow--0 div:first-child::after{
+    content: "0";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+.Flex-grow--ejemplo div::after, .Flex-grow--1 div:first-child::after{
+    content: "1";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+.Flex-grow--0 div:first-child{
+    flex-grow: 0;
+}
+.Flex-grow--1 div:first-child{
+    flex-grow: 1;
+}
+.Flex-grow--ejemplo div:first-child{
+    flex-grow: 3;
+}
+.Flex-grow--ejemplo div:first-child::after{
+    content: "3";
+}
+/* FIN FLEX GROW */
+
+/* INICIO FLEX SHRINK */
+.Flex-shrink--0 div,
+.Flex-shrink--1 div,
+.Flex-shrink--2 div,
+.Flex-shrink--3 div{
+    flex-basis: 400px;
+    flex-shrink: 1;
+}
+
+.Flex-shrink--0 div:first-child{
+    flex-shrink: 0;
+}
+.Flex-shrink--0 div:first-child::after{
+    content: "0";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+.Flex-shrink--1 div:first-child::after{
+    content: "1";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+.Flex-shrink--2 div:first-child::after{
+    content: "2";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+.Flex-shrink--3 div:first-child::after{
+    content: "3";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+.Flex-shrink--1 div:first-child{
+    flex-shrink: 1;
+}
+
+.Flex-shrink--2 div:first-child{
+    flex-shrink: 2;
+}
+.Flex-shrink--3 div:first-child{
+    flex-shrink: 3;
+}
+/* FIN FLEX SHRINK */
+
+
+/* INICIO FLEX BASIS */
+.Flex-basis--100px div:first-child{
+    flex-basis: 100px;
+}
+.Flex-basis--100px div:first-child::after{
+    content: "100px";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+.Flex-basis--200px div:first-child{
+    flex-basis: 200px;
+}
+.Flex-basis--200px div:first-child::after{
+    content: "200px";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+.Flex-basis--300px div:first-child{
+    flex-basis: 300px;
+}
+.Flex-basis--300px div:first-child::after{
+    content: "300px";
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--colorBlanco);
+    font-size: 2rem;
+}
+/* FIN FLEX BASIS */

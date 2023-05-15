@@ -1,6 +1,5 @@
 .FlexContenedor_Propiedad{
-    padding: 10px;
-    border-radius: 10px;
+    display: grid;
 }
 .FlexElemento:nth-child(1){
     background-color: var(--colorMorado);

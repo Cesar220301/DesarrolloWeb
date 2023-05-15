@@ -1,3 +1,7 @@
 .BlogContenido-contenedor{
-    padding-left: 200px;
+    padding-left: 120px;
+    transition: padding .3s ease-in-out;
+}
+.padding-left{
+    padding-left: 0;
 }

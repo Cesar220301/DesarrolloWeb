@@ -4,13 +4,14 @@
     width: 100%;
     background-color: var(--colorBlanco);
     color: var(--colorPrincipal);
-    height: 60px;
+    height: 45px;
     box-shadow: -5px 0 10px var(--colorSombra);
     z-index: 10;
     background: rgb(0,0,68);
     background: linear-gradient(270deg, rgba(0,0,0,1) 0%,  rgba(0,0,68,1)100%);
     color: #fff;
 }
+
 .BlogNav-contenedor ul{
     display: flex;
     list-style: none;
@@ -33,6 +34,23 @@
     margin: 0 6px;
     border-radius: 4px;
 }
+.BlogNav-contenedor .BlogNav-contenedor__menu{
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 25px;
+    height: 25px;
+    filter: invert(1);
+    background-color: #fff0;
+    background-image: url('../Imagenes/menu.png');
+    background-size: cover ;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
   
-  
+
 

@@ -1,9 +1,6 @@
 :root{
-  /* --colorPrincipal: #00c16c ; */
   --colorPrincipal: #004 ;
-  --colorPrincipalTransparente: #00c16c44 ;
-  --colorSecundario: #a7cc15 ;
-  /* --colorSecundarioTransparente: #a7cc1555 ; */
+  --colorPrincipalTransparente: #0044 ;
   --colorSecundarioTransparente: #0041 ;
   --colorTercero: #f56217 ;
   --colorTerceroTransparente: #f5621744;
@@ -13,7 +10,7 @@
   --colorNegro: #000 ;
   --colorSombra: #d3d2e1;
   --colorAzulado: #f7f7fd;
-
+  --colorBlancoTransparente: #fff3;
   --colorMorado: #90044a;
   --colorRojo: #da2644;
   --colorNaranja: #f8764e;
@@ -28,4 +25,21 @@
 
 html{
   font-size: 62.5%;
+}
+
+@media only screen and (max-width: 480px) {
+  .BlogContenido-contenedor{
+    padding-left: 0 !important;
+  }
+  #root .FlexContenedor{
+    padding: 4px;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  }
+  .Flex-shrink--0 div,
+  .Flex-shrink--1 div,
+  .Flex-shrink--2 div,
+  .Flex-shrink--3 div{
+      flex-basis: 150px;
+      flex-shrink: 1;
+  }
 }
